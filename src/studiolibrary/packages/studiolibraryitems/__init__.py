@@ -43,6 +43,19 @@ def resource():
     return _resource
 
 
+def registerItems():
+    """
+    Called by the studiolibrary config file to register the items.
+
+    :rtype: None
+    """
+    from studiolibraryitems import poseitem
+    from studiolibraryitems import animitem
+    from studiolibraryitems import mirroritem
+    from studiolibraryitems import setsitem
+    from studiolibraryitems import mayafileitem
+
+
 def setDebugMode(libraryWidget, value):
     """
     Triggered when the user chooses debug mode.
